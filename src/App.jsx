@@ -1,5 +1,6 @@
 import { Navbar } from "flowbite-react";
 import { NavbarComponent } from "./components/navbar/NavbarComponent";
+import "./App.css";
 
 export default function App() {
   return (

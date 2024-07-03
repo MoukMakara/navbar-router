@@ -70,7 +70,9 @@ export function NavbarComponent() {
         </span>
       </Navbar.Brand>
       <div className="flex md:order-2">
-        <Button>ចូល</Button>
+        <Button className="font-extrabold" as={Link} to={"/login"}>
+          ចូល
+        </Button>
         <Navbar.Toggle />
       </div>
       <Navbar.Collapse>
@@ -82,6 +84,7 @@ export function NavbarComponent() {
               to={list.path}
               active={list.active}
               key={index}
+              className="font-extrabold"
             >
               {list.name}
             </Navbar.Link>

@@ -11,6 +11,8 @@ import SportClub from "./page/sport-club/SportClub.jsx";
 import Events from "./page/events/Events.jsx";
 import News from "./page/news/News.jsx";
 import History from "./page/history/History.jsx";
+import Login from "./page/auth/login/Login.jsx";
+import Register from "./page/auth/register/Register.jsx";
 
 const router = createBrowserRouter([
   {
@@ -51,6 +53,14 @@ const router = createBrowserRouter([
       //   element: <ProductDetail />,
       // },
     ],
+  },
+  {
+    path: "/register",
+    element: <Register />,
+  },
+  {
+    path: "/login",
+    element: <Login />,
   },
 ]);
 
