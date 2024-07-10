@@ -14,6 +14,8 @@ import History from "./page/history/History.jsx";
 import Login from "./page/auth/login/Login.jsx";
 import Register from "./page/auth/register/Register.jsx";
 
+import SportClubDetail from "./page/sportclub-details/SportClubDetail.jsx";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -35,6 +37,10 @@ const router = createBrowserRouter([
       {
         path: "/sport-club",
         element: <SportClub />,
+      },
+      {
+        path: "/sportclub-details",
+        element: <SportClubDetail />,
       },
       {
         path: "/events",
