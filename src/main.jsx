@@ -13,8 +13,9 @@ import News from "./page/news/News.jsx";
 import History from "./page/history/History.jsx";
 import Login from "./page/auth/login/Login.jsx";
 import Register from "./page/auth/register/Register.jsx";
-
 import SportClubDetail from "./page/sportclub-details/SportClubDetail.jsx";
+import { store } from "./redux/store.js";
+import { Provider } from "react-redux";
 
 const router = createBrowserRouter([
   {
@@ -72,6 +73,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <Provider store={store}>
+      <RouterProvider router={router} />
+    </Provider>
   </React.StrictMode>
 );

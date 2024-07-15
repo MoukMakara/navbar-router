@@ -15,7 +15,8 @@ export default function SportClubDetail() {
         first_phone={sportClub.contact_info.first_phone}
         second_phone={sportClub.contact_info.second_phone}
         facebook={sportClub.contact_info.facebook}
-        telegram={sportClub.contact_info.telegram} // Assuming telegram field
+        telegram={sportClub.contact_info.telegram}
+        website={sportClub.contact_info.website}
       />
     </section>
   );
